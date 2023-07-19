@@ -7,8 +7,8 @@
 * let's start by creating [a VPC](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20145351.png) for the project with 10.0.0.4/16 ipv4 CDR
 
 **Network**
-* After we created [a public subnet](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20145502.png) to link our vpc and allow [ipv4 auto-assign ip](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20145543.png) to find it later on internet.
-* Now we created an [internet gateway](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20145618.png) to connect from internet to our vpc.
+* After we create [a public subnet](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20145502.png) to link our vpc and allow [ipv4 auto-assign ip](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20145543.png) to find it later on internet.
+* Now we create an [internet gateway](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20145618.png) to connect from internet to our vpc.
 * We create a routing table and [edit](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20145802.png) the rules that allow incoming traffic to our vpc from the internet.
     
 **Security & Cloud9**
