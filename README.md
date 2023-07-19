@@ -1,6 +1,4 @@
-# AWS exercice, screenshots and report
-
-alls our screenshots are in a logical order, you can choose the next one in the list to see the next step. We didn't put a link on each image but you can go to the next one between to links thanks to the logical order
+# CAPSTONE-PROJECT-SE1
 
 * First we created [our own VPC](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20145351.png) for this project with 10.0.0.4/16 ipv4 CDR for this project
 * After we created [our public subnet](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20145502.png) that is linked to our vpc and allow [ipv4 auto-assign ip](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20145543.png) for later make it reacheable from internet.
