@@ -13,77 +13,75 @@
 <br><br>
 * And allow ipv4 auto-assign ip to find it later on internet.
 <br><br>
-![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/9.png) 
-<br><br>
 * Now we create an internet gateway to connect from internet to our vpc.
 <br><br>
-![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20145618.png)
+![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/5.png)
 <br><br>
 * We create a routing table and edit the rules that allow incoming traffic to our vpc from the internet.
 <br><br>
-![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20145802.png) 
+![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/9.png) 
 <br><br>
 #
 **Security & Cloud9**
 * We create a security group, to block all incoming traffic and allow it on only three ports for http, https and ssh protocols.
 <br><br>
-![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20150029.png)
+![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/10.png)
 <br><br>
 * We create an ec2 instance from cloud9, after we link it to the vpc and the public network. We chosed the ssh secure shell connexion
 <br><br>
-![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20150145.png)
+![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/12.png)
 <br><br>
 * With cloud9 console and ssh connexion we install apache2, php, mariadb, and download the website of the subject on /var/www/html and change the owner of it to allow execution ot the php.
 <br><br>
-![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20151031.png)
+![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/14.png)
 <br><br>
 * So now the ec2 instance is created and we need to connect it to our security group, we modified the security group setting.
 <br><br>
-![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20151910.png)
+![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/15.png)
 <br><br>
 #
 **Website view**
 <br><br>
-![run well](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20152137.png)
+![run well](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/17.png)
 #
 **Database**
 * Now we create a Maria DB instance and setup the password.
 <br><br>
-![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20152315.png)
+![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/19.png)
 <br><br>
 * We need to establish a link with our EC2 instance. And we also link the databse to our vpc.
 <br><br>
-![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20152342.png)
+![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/20.png)
 <br><br>
 * We create automatically a private subnet for our DB and we give the access to our VPC security group.
 <br><br>
-![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20152434.png)
+![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/21.png)
 <br><br>
 * An AWS view where we can see that three self-managed private subnets were created in the process.
 <br><br>
-![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20153226.png)
+![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/23.png)
 <br><br>
 * We import the data from the SQL file that you give us on our DB using cloud 9 shell of our ec2 instance.
 <br><br>
-![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20154200.png)
+![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/25.png)
 <br><br>
 * We create three parameters to save username, password, endpoint and table name in the parameter store of AWS System Manager.
 <br><br>
-![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20154557.png)
+![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/27.png)
 <br><br>
 * We create an endpoint to link the website code to the DB.
 <br><br>
-![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20154821.png)
+![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/31.png)
 <br><br>
 #
 **IAM**
 * We create an IAM role to allow our PHP website on our EC2 instance to access on our webserver.
 <br><br>
-![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20155747.png)
+![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/36.png)
 <br><br>
 * We attached the role to our ec2 instance.
 <br><br>
-![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20155954.png)
+![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/40.png)
 <br><br>
 #
 **List of countries and the data**
