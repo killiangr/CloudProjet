@@ -4,16 +4,16 @@
 
 **VPC**
 
-* let's start by creating a VPC for the project with 10.0.0.4/16 ipv4 CDR <br><br> ![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20145351.png) 
+* let's start by creating a VPC for the project with 10.0.0.4/16 ipv4 CDR <br><br> ![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/1.png) 
 #
 **Network**
 * After we create a public subnet to link our vpc
 <br><br>
-![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20145502.png)
+![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/2.png)
 <br><br>
 * And allow ipv4 auto-assign ip to find it later on internet.
 <br><br>
-![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20145543.png) 
+![image](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/9.png) 
 <br><br>
 * Now we create an internet gateway to connect from internet to our vpc.
 <br><br>
@@ -88,7 +88,7 @@
 #
 **List of countries and the data**
 <br><br>
-![list of countries](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/Capture%20d'%C3%A9cran%202023-07-14%20160138.png)
+![list of countries](https://github.com/killiangr/CloudProjet/blob/main/AWS_Site/43.png)
 
 # IAM policies
 **Question 1:**
